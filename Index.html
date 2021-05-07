@@ -11,53 +11,108 @@
 <body>
 <header>
     <h1><i>Cálculo de riesgo de desarrollar cáncer de mama según el modelo de Gail</i></h1>
-    <img src="Imagenes/logo_c\303\241ncer de mama.jpg">
+    <img src="Imagenes/logo_mama.jpg">
 </header>
 <section>
-<p>
-    El modelo de Gail es una herramienta interactiva
-    que permite estimar el riesgo individual de
-    desarrollar cáncer de mama en pacientes sin
-    diagnóstico oncológico. Para el desarrollo de esta
-    página se utilizó el código fuente disponible en el
-    sitio web del Instituto Nacional del Cáncer, que
-    genera la probabilidad de una mujer de
-    desarrollar cáncer de mama durante los próximos
-    5 años y antes de los 90 años de edad teniendo en
-    cuenta sus antecedentes personales. Este modelo
-    incorpora información sobre factores de riesgo y
-    actualmente es la principal herramienta utilizada
-    para la evaluación del riesgo de cáncer de mama
-    en pacientes con atipia.
-</p>
+    <div>
+        <p>
+            El modelo de Gail es una herramienta interactiva
+            que permite estimar el riesgo individual de
+            desarrollar cáncer de mama en pacientes sin
+            diagnóstico oncológico. Para el desarrollo de esta
+            página se utilizó el código fuente disponible en el
+            sitio web del Instituto Nacional del Cáncer, que
+            genera la probabilidad de una mujer de
+            desarrollar cáncer de mama durante los próximos
+            5 años y antes de los 90 años de edad teniendo en
+            cuenta sus antecedentes personales. Este modelo
+            incorpora información sobre factores de riesgo y
+            actualmente es la principal herramienta utilizada
+            para la evaluación del riesgo de cáncer de mama
+            en pacientes con atipia.
+        </p>
+    </div>
 </section>
 <aside>
-    <p>
-        Antecedente de Cáncer de mama o carcinoma ductal in situ (CDIS) o
-        radioterapia por Linfoma Hodgkin
-    </p>
-    <p>
-        Antecedente de mutación BRCA1 o BRCA2 o diagnóstico genético
-    </p>
-    <p>
-        Edad de la paciente
-    </p>
-    <p>
-        Raza
-    </p>
-    <p>
-        Antecedente de biopsia benigna
-    </p>
-    <p>
-        Edad de la primera menstruación
-    </p>
-    <p>
-        Edad al nacimiento del primer hijo
-    </p>
-    <p>
-        Familiares de 1° grado con antecedente de cáncer de mama
-    </p>
+    <div>
+        <form action="/action_page.php" >
+            <p>
+                Antecedente de Cáncer de mama o carcinoma ductal in situ (CDIS) o
+                radioterapia por Linfoma Hodgkin  <select name="criterio de elegibilidad">
+                <option value="Seleccionar">Seleccionar</option>
+                <option value="si">si</option>
+                <option value="no">no</option>
+            </select>
+            </p>
+            <p>
+                Antecedente de mutación BRCA1 o BRCA2 o diagnóstico genético <select name="criterio de elegibilidad">
+                <option value="Seleccionar">Seleccionar</option>
+                <option value="si">si</option>
+                <option value="no">no</option>
+                <option value="desconocido">desconocido</option>
+            </select>
+            </p>
+            <p>
+                Edad de la paciente
+                <input type="number" name="Edad" min="35" max="90" step="5"/>
+            </p>
+            <p>
+                Raza <select name="factor demográfico">
+                <option value="Seleccionar">Seleccionar</option>
+                <option value="Blanca">Blanca</option>
+                <option value="Afroamericano">Afroamericano</option>
+                <option value="Hispano">Hispano</option>
+                <option value="Asiático">Asiático</option>
+                <option value="Indioamericano">Indioamericano</option>
+                <option value="Desconocido">Desconocido</option>
+            </select>
 
+            </p>
+            <p>
+                Antecedente de biopsia benigna <select name="Antecedente">
+                <option value="Seleccionar">Seleccionar</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+            </p>
+            <p>
+                Edad de la primera menstruación <select name="Antecedente">
+                <option value="Seleccionar">Seleccionar</option>
+                <option value="7 a 11 ">7 a 11</option>
+                <option value="12 a 13">12 a 13</option>
+                <option value="mayor a 14">mayor a 14</option>
+            </select>
+            </p>
+            <p>
+                Edad al nacimiento del primer hijo <select name="Antecedente">
+                <option value="Seleccionar">Seleccionar</option>
+                <option value="Nulípara">Nulípara</option>
+                <option value="Menor a 20 años">Menor a 20 años</option>
+                <option value="20-24">20-24</option>
+                <option value="25-29">25-29</option>
+                <option value="Mayor a 30 años">Mayor a 30 años</option>
+            </select>
+
+            </p>
+            <p>
+                Familiares de 1° grado con antecedente de cáncer de mama <select name="Antecedente">
+                <option name="Seleccionar">Seleccionar</option>
+                <option name="Ninguno">Ninguno</option>
+                <option name="Uno">Uno</option>
+                <option name="Más de uno">Más de uno</option>
+                <option name="Desconocido">Desconocido</option>
+            </select>
+            </p>
+            <p>
+                <button type="Submit">Calcular</button>
+            </p>
+        </form>
+    </div>
 </aside>
+<footer>
+    <a href="https://dceg.cancer.gov/about/organization/tdrp/bb/resources" target="_blank">
+        Fuente https://dceg.cancer.gov/about/organization/tdrp/bb/resources
+    </a>
+</footer>
 </body>
 </html>

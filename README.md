@@ -1,12 +1,17 @@
-# proyecto2021
-Estructura de Proyecto Lab de Compu II - 2021
+# Cálculo de riesgo de desarrollo de cáncer de mama según el modelo de Gail
+Esta página corresponde al modelo de cálculo de riesgo de desarrollar cáncer de mama
+##Autores
+*Araujo, Iliana
 
-### Requisitos del Primer Parcial
+### Tenologías usadas
+*HTML5
+*CCS3
+
 - [X]El proyecto debe estar subido al repositorio adecuado "Proyecto2021-ApellidoAlumno1-ApellidoAlumno2"
 - [X] La página principal debe llamarse index
-- [ ] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripcion y palabras clave
-- [ ] Emplear al menos 3 etiquetas semánticas
-- [ ] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
+- [X] En el ```<head></head>``` incluir las etiquetas ```<meta>``` detallando: autor, descripcion y palabras clave
+- [X] Emplear al menos 3 etiquetas semánticas
+- [X] Emplear ```<header></header>```. En el contenido de la cabecera debe haber un título ```<h1></h1>```, puede tener color de fondo, algún logotipo, etc.
 - [ ] Modificar el Readme.MD y colocar información del proyecto/página (mínimamente: título del proyecto, autores, link de gh-pages, contenido de la página,  listado de tecnologías usadas, etc)
 - [ ] Publicar la Web empleando GitHubPages
 - [ ] La estructura de la página debe estar definida con ```<div></div>```

@@ -1,9 +1,10 @@
 # Cálculo de riesgo de desarrollo de cáncer de mama según el modelo de Gail
 Esta página corresponde al modelo de cálculo de riesgo de desarrollar cáncer de mama
+
 ##Autores
 *Araujo, Iliana
 
-### Tecnologías usadas
+## Tecnologías usadas
 *HTML5
 *CCS3
 

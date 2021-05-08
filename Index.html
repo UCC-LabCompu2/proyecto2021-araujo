@@ -15,19 +15,15 @@
 </header>
 <section>
     <div class="contenido">
-            <p>
-                El modelo de Gail es una herramienta interactiva que permite estimar el riesgo individual de
-                desarrollar cáncer de mama en pacientes sin diagnóstico oncológico.
-            </p>
-            <p>Para el desarrollo de esta página se utilizó el código fuente disponible en el
-                sitio web del Instituto Nacional del Cáncer, que genera la probabilidad de una mujer de
-                desarrollar cáncer de mama durante los próximos 5 años y antes de los 90 años de edad teniendo en
-                cuenta sus antecedentes personales.
-            </p>
-            <p>Este modelo incorpora información sobre factores de riesgo y actualmente es la principal
-                herramienta utilizada para la evaluación del riesgo de cáncer de mama
-                en pacientes con atipia.
-            </p>
+        <article>
+            El modelo de Gail es una herramienta interactiva que permite estimar el riesgo individual de
+        desarrollar cáncer de mama en pacientes sin diagnóstico oncológico.Para el desarrollo de esta página
+        se utilizó el código fuente disponible en el sitio web del Instituto Nacional del Cáncer, que genera
+        la probabilidad de una mujer de desarrollar cáncer de mama durante los próximos 5 años y antes de los
+        90 años de edad teniendo en cuenta sus antecedentes personales.
+        Este modelo incorpora información sobre factores de riesgo y actualmente es la principal
+        herramienta utilizada para la evaluación del riesgo de cáncer de mama en pacientes con atipia.
+        </article>
     </div>
 </section>
 <aside>
@@ -73,7 +69,7 @@
             </p>
             <p>
                 Antecedente de biopsia benigna
-                <label for="Biopsia">Biopsia</label>
+                <label for="Biopsia"></label>
                 <select id="Biopsia">
                     <option value="Seleccionar">Seleccionar</option>
                     <option value="Si">Si</option>
@@ -82,7 +78,7 @@
             </p>
             <p>
                 Edad de la primera menstruación
-                <label for="menarca">Antecedente</label>
+                <label for="menarca"></label>
                 <select id="menarca">
                     <option value="Seleccionar">Seleccionar</option>
                     <option value="7 a 11 ">7 a 11</option>
@@ -92,7 +88,7 @@
             </p>
             <p>
                 Edad al nacimiento del primer hijo
-                <label for="paridad">paridad</label>
+                <label for="paridad"></label>
                 <select id="paridad">
                     <option value="Seleccionar">Seleccionar</option>
                     <option value="Nulípara">Nulípara</option>
@@ -105,7 +101,7 @@
             </p>
             <p>
                 Familiares de 1° grado con antecedente de cáncer de mama
-                <label for="AHF">AHF</label>
+                <label for="AHF"></label>
                 <select id="AHF">
                     <option name="Seleccionar">Seleccionar</option>
                     <option name="Ninguno">Ninguno</option>
@@ -115,16 +111,18 @@
                 </select>
             </p>
             <p>
-                <button type="submit">Calcular</button>
+                <button id="calcular" type="submit">Calcular</button>
             </p>
         </div>
     </form>
 
 </aside>
 <footer>
+
     <a href="https://dceg.cancer.gov/about/organization/tdrp/bb/resources" target="_blank">
         Fuente https://dceg.cancer.gov/about/organization/tdrp/bb/resources
     </a>
+
 </footer>
 </body>
 </html>

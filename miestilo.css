@@ -1,3 +1,28 @@
-h1{
-    color: #1d1c1c;border-color: #1d1c1c;fontfamily:;
+body {
+    background: #d4b145;
+    font-style: italic;
+    font-family: monserrat;
+    text-align: left;
+    color: #1d1c1c;
+    border-color: #1d1c1c;
+    font-type: monserrat;
+    font-size: large;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: 200px;
+    alignment-baseline: text-top;
 }
+
+
+.columna1 {
+    float: left;
+    widht: 50%;
+}
+
+.columna2 {
+    float: right;
+    widht: 50%;
+}
+

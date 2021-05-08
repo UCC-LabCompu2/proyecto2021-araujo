@@ -1,12 +1,51 @@
 body{
-    font-size: 16px;background: #e0c188;}
+   font-family: Calibri;
+    font-size: 16px;
+    font-style: italic;
+    background:linear-gradient(to right, #e0c188, #d2a3ab);
+}
+h1{ color: #1c1b1bff;font-size:xx-large; font-style: italic; float:right;
+
+}
+   #imagen{
+    width:250px;
+    float:left;
+    bottom:1000px;
+
+}
+
 div{
-    width: 50%;
-    height: 70%;
-    background-color: #bf9847;
-    margin:20px 50px;
-    padding: 30px;
-    border: 10px solid #3e361d;
+    width:500px;
+    height: 30em;
+    background-color: #e2d4b7;
+    margin:20px;
+    padding: 10px 30px;
+    border: 5px solid #af9649;
+    font-size: larger;
+    alignment: left;
+
+}
+.formulario{
+    position:relative;
+    left:0;
+    right:0;
+    bottom:250px;
+    float:right;
+
+
+}
+
+.contenido{
+    position:relative;
+    left:0;
+    right:0;
+    bottom:0;
+    top:300px;
+
+
+
+}
+footer{
 
 }
 

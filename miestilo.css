@@ -40,9 +40,13 @@ div{
     float:right;
     font-size:large;
     top: 800px;
-
-
-
+}
+#cáncer previo{
+    background:hotpink;
+}
+#mutación{
+    background-color: hotpink;
+    border-color: grey;
 }
 
 
@@ -50,5 +54,7 @@ footer a{
     position:relative;
     top:500px;
     float:left;
+    color: black;
+    font-size: larger;
 }
 

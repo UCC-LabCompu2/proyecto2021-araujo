@@ -7,6 +7,7 @@ Esta página corresponde al modelo de cálculo de riesgo de desarrollar cáncer 
 ## Tecnologías usadas
 *HTML5
 *CCS3
+link al sitio[Modelo de Gail](https://ucc-labcompu2.github.io/proyecto2021-araujo/Index.html)
 
 - [X] El proyecto debe estar subido al repositorio adecuado "Proyecto2021-ApellidoAlumno1-ApellidoAlumno2"
 - [X] La página principal debe llamarse index

@@ -3,8 +3,9 @@ body{
     font-size: 16px;
     font-style: italic;
     background:linear-gradient(to right, #e0c188, #d2a3ab);
-    margin:30px;
+    margin:10px;
 }
+
 h1{ color: #1c1b1bff;
     font-size:45px;
     font-style: italic;
@@ -19,42 +20,113 @@ h1{ color: #1c1b1bff;
 }
 
 div{
-    width:45%;
-    height:30em;
-    background-color: #e2d4b7;
+    width:40%;
+    height:25em;
+    background-color: #cec0a1ff;
     margin:10px;
     padding: 5px 5px;
     border: 5px solid #eee6d0;
-    font-size: large;
-    alignment: left;
+    font-size: x-large;
+    alignment: center;
+    border-radius:5px;
+    top:500px;
+    line-height:1.6;
 
 }
 .contenido{
     position:relative;
-    top: 300px;
-    font-size: large;
     font-style: italic;
-    font-family: monserrat;
+    font-weight: bold;
 }
 .formulario{
+    width: 50%;
     float:right;
-    font-size:large;
-    top: 800px;
+    font-size:x-large;
+    top:100%;
+    margin:20px;
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+
+
 }
-#cáncer previo{
-    background:hotpink;
+#previo{
+    background-color:beige;
+    border-color: grey;
+    font-size: medium;
+    font-weight: bold;
 }
 #mutación{
-    background-color: hotpink;
+    background-color: beige;
     border-color: grey;
+    font-size: medium;
+    font-weight: bold;
+
+}
+#edad{
+    background-color: beige;
+    border-color: grey;
+    font-size: medium;
+    font-weight: bold;
+}
+#raza{
+    background-color: beige;
+    border-color: grey;
+    font-size: medium;
+    font-weight: bold;
+}
+#biopsia{
+    background-color:beige;
+    border-color: grey;
+    font-size: medium;
+    font-weight: bold;
+}
+#cuantas{
+    font-weight: bold;
+    background-color: beige;
+    border-color: grey;
+    font-size: medium;
+}
+#hda{
+    font-weight: bold;
+    background-color: beige;
+    border-color: grey;
+    font-size: medium;
+}
+#menarca{
+    background-color: beige;
+    border-color: beige;
+    font-size: medium;
+    font-weight: bold;
+}
+#paridad{
+    background-color: beige;
+    border-color: grey;
+    font-size: medium;
+    font-weight: bold;
+}
+#ahf{
+    background-color: beige;
+    border-color: grey;
+    font-size: medium;
+    font-weight: bold;
+}
+#calcular{
+    background-color: #ad8c6eff;
+    border-color: #47473f;
+    font-size: x-large;
+    alignment: center;
+    font-weight: bold;
 }
 
 
 footer a{
     position:relative;
-    top:500px;
+    top:700px;
     float:left;
-    color: black;
-    font-size: larger;
+    color: #1f1e1e;
+    font-size: x-large;
+    font-weight: bold;
 }
 

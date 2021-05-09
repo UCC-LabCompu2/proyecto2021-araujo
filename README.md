@@ -22,11 +22,11 @@ Esta página corresponde al modelo de cálculo de riesgo de desarrollar cáncer 
 - [X] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
 - [X] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
 - [X] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
-- [ ] No utilizar etiquetas deprecadas.
-- [ ] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
-- [ ] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
+- [X] No utilizar etiquetas deprecadas.
+- [X] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
+- [X] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
 - [ ] El código debe estar pusheado en el repositorio (emplear gh-pages), y no debe haber diferencias entre **main** y **gh-pages** (verificar de realizar el Merge).
-- [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
+- [X] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [X] Todas las etiquetas deben estar correctamente cerradas
 - [X] Los ids de los elementos deben ser unívocos
 - [X] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)

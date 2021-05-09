@@ -27,12 +27,12 @@
     </div>
 </section>
 <aside>
-    <form action="/action_http://localhost:63342/proyecto2021-araujo/Resultados.html?_ijt=nvsl6fjrsk47bk67cvvkti7mgj" >
-        <div class="formulario">
+    <form class="formulario" action="/action_page.php">
+
             <p>
                 Antecedente de Cáncer de mama o carcinoma ductal in situ (CDIS) o
                 radioterapia por Linfoma Hodgkin
-                <label for="cáncer previo">cáncer previo</label>
+                <label for="cáncer previo"></label>
                 <select id="cáncer previo">
                     <option value="Seleccionar">Seleccionar</option>
                     <option value="si">si</option>
@@ -76,6 +76,26 @@
                     <option value="No">No</option>
                 </select>
             </p>
+             <ol>
+                 <li>Cuantas
+                 <label for="Cuantas"></label>
+                 <select id="Cuantas">
+                     <option value="Seleccionar">Seleccionar</option>
+                     <option value="1">1</option>
+                     <option value="2 o más">2 o más</option>
+                 </select>
+                 </li>
+
+                <li>Hiperplasia ductal atipica
+                <label for="HDA"></label>
+                <select id="HDA">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="Si">Si</option>
+                    <option value="no">No</option>
+                    <option value="Desconocido">Desconocido</option>
+                </select>
+                </li>
+            </ol>
             <p>
                 Edad de la primera menstruación
                 <label for="menarca"></label>
@@ -110,10 +130,12 @@
                     <option name="Desconocido">Desconocido</option>
                 </select>
             </p>
+
+
             <p>
                 <button id="calcular" type="submit">Calcular</button>
             </p>
-        </div>
+
     </form>
 
 </aside>

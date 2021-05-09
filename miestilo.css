@@ -6,14 +6,14 @@ body{
     margin:30px;
 }
 h1{ color: #1c1b1bff;
-    font-size:xx-large;
+    font-size:45px;
     font-style: italic;
-    float:right;
-
+    float:left;
+    clear-side: right;
 }
 #imagen{
     width:200px;
-    float:left;
+    float:right;
     bottom:10px;
 
 }
@@ -31,20 +31,16 @@ div{
 }
 .contenido{
     position:relative;
-    left:0;
-    right:0;
-    bottom:0;
-    top:230px;
-
-
-
+    top: 300px;
+    font-size: large;
+    font-style: italic;
+    font-family: monserrat;
 }
 .formulario{
-    position:relative;
-    left:0;
-    right:0;
-    bottom:300px;
     float:right;
+    font-size:large;
+    top: 800px;
+
 
 
 }

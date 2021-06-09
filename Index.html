@@ -73,13 +73,14 @@
         <p>
             Antecedente de biopsia benigna
             <label for="biopsia"></label>
-            <select id="biopsia">
+            <select id="biopsia" onclick="mostrar_ocultar(this.value)">
                 <option value="Seleccionar">Seleccionar</option>
                 <option value="Si">Si</option>
                 <!--Si tiene biopsia previa continuará con la lista ordenada/Cuantas/HDA-->
                 <option value="No">No</option>
             </select>
-        </p>
+        <p>
+
         <ol>
             <li>Cuantas
                 <label for="cuantas"></label>

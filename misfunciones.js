@@ -1,17 +1,24 @@
 /**
  * Cálculo de riesgo según modelo probabilístico de Gail.
- * @method canvasGail-Dibujo del cálculo de riesgo;
- * @param
+ * @method mostrar_ocultar-Muestra opciones si el paciente tiene biopsia previa;
+ * @param {string} biopsia-Si posee biopsia previa despliega dos opciones;
  * @return
  */
-function mostrar_ocultar(biopsia) {
-    if (biopsia === "val_mostrar") {
-        document.getElementById("divMO").style.display = "block";
-    } else if (biopsia === "val_ocultar") {
-        document.getElementById("divMO").style.display = "none";
-    }
 
-    function canvasGail() {
+function mostrar_ocultar(biopsia) {
+    if (biopsia === "Si") {
+        document.getElementById("Si").style.display = "none";
+    } else if (biopsia === "No") {
+        document.getElementById("No").style.display = "block";
+    }
+    /**
+     * Cálculo de riesgo según modelo probabilístico de Gail.
+     * @method ca-Muestra opciones si el paciente tiene biopsia previa;
+     * @param {string} biopsia-Si posee biopsia previa despliega dos opciones;
+     * @return
+     */
+
+    function canvasGail () {
         var canvas = document.getElementById("canvas");
         var context = canvas.getContext("2d");
         context.fillStyle = "#eee6d0";

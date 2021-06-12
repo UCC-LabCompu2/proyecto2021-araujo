@@ -12,42 +12,38 @@ h1{ color: #1c1b1bff;
     float:left;
     clear-side: right;
 }
-#imagen{
-    width:200px;
-    float:right;
-    bottom:10px;
-
-}
-
-div{
-    width:40%;
-    height:30em;
-    background-color: #cec0a1ff;
-    margin:10px;
-    padding: 5px 5px;
-    border: 5px solid #eee6d0;
-    font-size: x-large;
-    text-align: center;
-    border-radius:5px;
-    top:500px;
-    line-height:1.6;
-
+#imagen {
+    width: 200px;
+    float: right;
+    bottom: 10px;
 }
 .contenido{
-    position:relative;
+    width:80%;
+    height:10em;
+    background-color: #cec0a1ff;
+    margin:10px;
+    border: 5px solid #eee6d0;
+    padding: 5px 5px;
+    font-size: x-large;
+    text-align:center;
+    border-radius:5px;
+    top:100px;
+    line-height:1.6;
+    position:absolute;
     font-style: italic;
     font-weight: bold;
+
 }
 .formulario{
-    width: 50%;
-    float:right;
+    width: 60%;
     font-size:x-large;
-    top:100%;
+    top:400px;
     margin:20px;
     font-style: italic;
     font-weight: bold;
     display: flex;
     flex-direction: column;
+    position: absolute;
 
 
 }
@@ -123,10 +119,11 @@ div{
 
 footer a{
     position:relative;
-    top:700px;
-    float:left;
+    top:1200px;
+    float:right;
     color: #1f1e1e;
     font-size: x-large;
     font-weight: bold;
+    margin:auto;
 }
 

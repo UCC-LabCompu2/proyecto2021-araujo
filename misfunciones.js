@@ -5,7 +5,8 @@
  */
 alert('esta funcionando')
 function cargarForm (){
-    var antecedente, mut, e, raza,biopsia, cuantas, hda, menarca, paridad, ahf, urlComp;
+    let antecedente, mut, e, raza,biopsia, cuantas, hda, menarca, paridad,
+        ahf, urlComp;
     antecedente=document.getElementById("previo")[0].value;
     mut=document.getElementById("mutación")[0].value;
     e=document.getElementById("Edad").value;
@@ -21,19 +22,19 @@ function cargarForm (){
 }
 
 function mostrar_resultado(){
-    var urlComp, pre, mu, e, ra,bio,cuan,h, me,pa, ah;
-    urlComp = window.location.href.split("/")[];
-    pre = window.location.href.split("#")[];
-    mu= window.location.href.split ("#")[];
-    e = window.location.href.split ("#")[];
-    ra = window.location.href.split("#")[];
-    bio = window.location.href.split("#")[];
-    cuan = window.location.href.split("#")[];
-    h = window.location.href.split("#")[];
-    me = window.location.href.split("#")[];
-    pa = window.location.href.split("#")[];
-    ah = window.location.href.split("#")[];
-    console log (urlComp);
+    let urlComp, pre, mu, e, ra,bio,cuan,h, me,pa, ah;
+    urlComp = window.location.href.split("/")[5];
+    pre = urlComp.split("#")[1];
+    mu= urlComp.split ("#")[2];
+    e = urlComp.split ("#")[3];
+    ra = urlComp.split("#")[4];
+    bio = urlComp.split ("#")[5];
+    cuan = urlComp.split("#")[6];
+    h = urlComp.split("#")[7];
+    me = urlComp.split("#")[8];
+    pa = urlComp.split("#")[9];
+    ah = urlComp.split("#")[10];
+    document.getElementById("form").value = pre + "" + mu +"" + e +""+ ra +""+ bio +""+ cuan +""+ h +""+ me +""+ pa +""+ ah;
 }
 
 /**
@@ -64,7 +65,7 @@ function mostrar_ocultar(previa) {
         var yMax = canvas.height;
         var xMax = canvas.width;
         context.fillStyle = "#eee6d0";
-        context.arc(xMax / 2, yMax / 2, 25, 0, 2 * Math.PI);
+        context.arc(xMax / 10, yMax / 10, 80, 0, 4* Math.PI);
         context.stroke();
         context.fillStyle = "#842A61F2";
         context.fill();

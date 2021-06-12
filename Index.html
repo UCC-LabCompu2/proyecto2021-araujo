@@ -28,25 +28,25 @@
     </div>
 </section>
 <aside>
-    <form class="formulario" action="/http://localhost:63342/proyecto2021-araujo/Resultados.html?_ijt=1l14artmj3hclplis31dtr056p">
+        <form class="formulario">
 
         <p>
             Antecedente de Cáncer de mama o carcinoma ductal in situ (CDIS) o
-            radioterapia por Linfoma Hodgkin
+                radioterapia por Linfoma Hodgkin
             <label for="previo"></label>
             <select id="previo">
-                <option value="Seleccionar">Seleccionar</option>
-                <option value="si">si</option>
+                <option value="Seleccionar">-Seleccionar-</option>
+                <option value="si" onselect = "alert('No se puede realizar el cálculo.Buscar otra herramienta');">si</option>
                 <!--Error/No se puede realizar el cálculo en pacientes con cáncer previo.Buscar otra herramienta-->
                 <option value="no">no</option>
             </select>
         </p>
         <p>
             Antecedente de mutación BRCA1 o BRCA2 o diagnóstico genético
-            <label for="mutación">mutación</label>
+            <label for="mutación"></label>
             <select id="mutación">
-                <option value="Seleccionar">Seleccionar</option>
-                <option value="si">si</option>
+                <option value="Seleccionar">-Seleccionar-</option>
+                <option value="si" onload="alert('Otra herramienta es más apropiada.Elegir IBIS model o BOADICEA')" >si</option>
                 <!--Error/Otra herramienta es más apropiada para el cálculo/IBIS model/BOADICEA model-->
                 <option value="no">no</option>
                 <option value="desconocido">desconocido</option>
@@ -70,17 +70,16 @@
             </select>
 
         </p>
+
         <p>
             Antecedente de biopsia benigna
             <label for="biopsia"></label>
-            <select id="biopsia" onclick="mostrar_ocultar(this.value)">
+            <select id="biopsia" >
                 <option value="Seleccionar">Seleccionar</option>
                 <option value="Si">Si</option>
                 <!--Si tiene biopsia previa continuará con la lista ordenada/Cuantas/HDA-->
                 <option value="No">No</option>
             </select>
-        <p>
-
         <ol>
             <li>Cuantas
                 <label for="cuantas"></label>
@@ -101,6 +100,7 @@
                 </select>
             </li>
         </ol>
+
         <p>
             Edad de la primera menstruación
             <label for="menarca"></label>
@@ -138,11 +138,10 @@
 
 
         <p>
-            <button id="calcular" type="submit">Calcular</button>
+            <button id="calcular" onclick="cargarForm ()">Calcular</button>
         </p>
 
     </form>
-
 </aside>
 <footer>
 

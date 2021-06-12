@@ -1,31 +1,71 @@
 /**
  * Cálculo de riesgo según modelo probabilístico de Gail.
  * @method mostrar_ocultar-Muestra opciones si el paciente tiene biopsia previa;
+ * @return
+ */
+alert('esta funcionando')
+function cargarForm (){
+    var antecedente, mut, e, raza,biopsia, cuantas, hda, menarca, paridad, ahf, urlComp;
+    antecedente=document.getElementById("previo")[0].value;
+    mut=document.getElementById("mutación")[0].value;
+    e=document.getElementById("Edad").value;
+    raza=document.getElementById("raza")[0].value;
+    biopsia=document.getElementById("biopsia")[0].value;
+    cuantas=document.getElementById("cuantas") [0].value;
+    hda=document.getElementById("hda")[0].value;
+    menarca=document.getElementById("menarca") [0].value;
+    paridad=document.getElementById("paridad")[0].value;
+    ahf=document.getElementById("ahf")[0].value;
+    urlComp = "Resultados.html#" + antecedente + "#" + mut + "#" + e +"#" + raza + "#" + biopsia + "#" + cuantas +"#" + hda +"#"+ menarca + "#" + paridad + "#" + ahf;
+    window.open (urlComp);
+}
+
+function mostrar_resultado(){
+    var urlComp, pre, mu, e, ra,bio,cuan,h, me,pa, ah;
+    urlComp = window.location.href.split("/")[];
+    pre = window.location.href.split("#")[];
+    mu= window.location.href.split ("#")[];
+    e = window.location.href.split ("#")[];
+    ra = window.location.href.split("#")[];
+    bio = window.location.href.split("#")[];
+    cuan = window.location.href.split("#")[];
+    h = window.location.href.split("#")[];
+    me = window.location.href.split("#")[];
+    pa = window.location.href.split("#")[];
+    ah = window.location.href.split("#")[];
+    console log (urlComp);
+}
+
+/**
+ * Cálculo de riesgo según modelo probabilístico de Gail.
+ * @method ca-Muestra opciones si el paciente tiene biopsia previa;
  * @param {string} biopsia-Si posee biopsia previa despliega dos opciones;
  * @return
  */
 
-function mostrar_ocultar(biopsia) {
-    if (biopsia === "Si") {
+
+
+function mostrar_ocultar(previa) {
+    if (previa === "Si") {
         document.getElementById("Si").style.display = "none";
-    } else if (biopsia === "No") {
+    } else if (previa === "No") {
         document.getElementById("No").style.display = "block";
     }
-    /**
-     * Cálculo de riesgo según modelo probabilístico de Gail.
-     * @method ca-Muestra opciones si el paciente tiene biopsia previa;
-     * @param {string} biopsia-Si posee biopsia previa despliega dos opciones;
-     * @return
-     */
+}
+/**
+ * Cálculo de riesgo según modelo probabilístico de Gail.
+ * @method canvasGail, muestra el resultado probabilístico en un gráfico;
+ * @return gráfico
+ */
 
     function canvasGail () {
-        var canvas = document.getElementById("canvas");
+        var canvas = document.getElementById("canvasGail");
         var context = canvas.getContext("2d");
-        context.fillStyle = "#eee6d0";
+        var yMax = canvas.height;
         var xMax = canvas.width;
-        context.arc(xMax / 2, yMax / 2, 25, 0, 2 * Math.PI)
+        context.fillStyle = "#eee6d0";
+        context.arc(xMax / 2, yMax / 2, 25, 0, 2 * Math.PI);
         context.stroke();
         context.fillStyle = "#842A61F2";
         context.fill();
     }
-}

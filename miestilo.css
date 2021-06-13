@@ -115,6 +115,14 @@ h1{ color: #1c1b1bff;
     alignment: center;
     font-weight: bold;
 }
+#canvasGail{
+    width: 40%;
+    background-color: #e0c188;
+    position:absolute;
+    right:100px;
+    top:600px;
+
+}
 
 
 footer a{

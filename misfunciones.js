@@ -65,7 +65,7 @@ function mostrar_ocultar(previa) {
         var yMax = canvas.height;
         var xMax = canvas.width;
         context.fillStyle = "#eee6d0";
-        context.arc(xMax / 10, yMax / 10, 80, 0, 4* Math.PI);
+        context.arc(xMax / 2, yMax / 2, 200, 0, 4* Math.PI);
         context.stroke();
         context.fillStyle = "#842A61F2";
         context.fill();

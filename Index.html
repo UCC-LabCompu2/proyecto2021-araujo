@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="miestilo.css" type="text/css">
     <script type="text/javascript" src="misfunciones.js"></script>
 </head>
-<body>
+<body onload="canvasGail()" >
 <header>
     <h1><i>Cálculo de riesgo de desarrollar cáncer de mama según el modelo de Gail</i></h1>
     <img src="Imagenes/cancer-de-mama.png" id="imagen" alt="Logo cáncer de mama">
@@ -143,6 +143,9 @@
 
     </form>
 </div>
+<canvas  id="canvasGail" class="proyecto" width="800px" height="600px">
+    El navegador no soporta canvas
+</canvas>
 <footer>
 
     <a href="https://dceg.cancer.gov/about/organization/tdrp/bb/resources" target="_blank">

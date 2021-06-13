@@ -40,17 +40,17 @@ function mostrar_resultado(){
 /**
  * Cálculo de riesgo según modelo probabilístico de Gail.
  * @method ca-Muestra opciones si el paciente tiene biopsia previa;
- * @param {string} biopsia-Si posee biopsia previa despliega dos opciones;
+ * @param {string} bio-Si posee biopsia previa despliega dos opciones;
  * @return
  */
 
 
 
-function mostrar_ocultar(previa) {
-    if (previa === "Si") {
-        document.getElementById("Si").style.display = "none";
-    } else if (previa === "No") {
-        document.getElementById("No").style.display = "block";
+function mostrar_ocultar(bio) {
+    if (bio === "val_mostrar") {
+        document.getElementById("biop").style.display = "block";
+    } else if (bio === "val_ocultar") {
+        document.getElementById("biop").style.display = "none";
     }
 }
 /**

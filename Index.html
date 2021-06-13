@@ -28,11 +28,11 @@
     </div>
 </section>
 <div>
-        <form class="formulario">
+    <form class="formulario">
 
         <p>
             Antecedente de Cáncer de mama o carcinoma ductal in situ (CDIS) o
-                radioterapia por Linfoma Hodgkin
+            radioterapia por Linfoma Hodgkin
             <label for="previo"></label>
             <select id="previo">
                 <option value="Seleccionar">-Seleccionar-</option>
@@ -70,37 +70,44 @@
             </select>
 
         </p>
+        <div>
+            <p>
+                Antecedente de biopsia benigna
+            </p>
+            <p>
+                <label for="Si" >Si</label>
+                <input id="Si" type="radio" name="biopsia" value="val_mostrar" onclick="mostrar_ocultar(this.value)">
+            </p>
+            <p>
+                <label for="No">No</label>
+                <input id="No" type="radio" name="biopsia" value="val_ocultar" onclick="mostrar_ocultar(this.value)">
+            </p>
+        </div>
+        <!--Si tiene biopsia previa continuará con la lista ordenada/Cuantas/HDA-->
+        <div id="biop">
 
-        <p>
-            Antecedente de biopsia benigna
-            <label for="biopsia"></label>
-            <select id="biopsia" >
-                <option value="Seleccionar">Seleccionar</option>
-                <option value="Si">Si</option>
-                <!--Si tiene biopsia previa continuará con la lista ordenada/Cuantas/HDA-->
-                <option value="No">No</option>
-            </select>
-        <ol>
-            <li>Cuantas
-                <label for="cuantas"></label>
-                <select id="cuantas">
-                    <option value="Seleccionar">Seleccionar</option>
-                    <option value="1">1</option>
-                    <option value="2 o más">2 o más</option>
-                </select>
-            </li>
+            <ol>
+                <li>Cuantas
+                    <label for="cuantas"></label>
+                    <select id="cuantas">
+                        <option value="Seleccionar">Seleccionar</option>
+                        <option value="1">1</option>
+                        <option value="2 o más">2 o más</option>
+                    </select>
+                </li>
 
-            <li>Hiperplasia ductal atipica
-                <label for="hda"></label>
-                <select id="hda">
-                    <option value="Seleccionar">Seleccionar</option>
-                    <option value="Si">Si</option>
-                    <option value="no">No</option>
-                    <option value="Desconocido">Desconocido</option>
-                </select>
-            </li>
-        </ol>
+                <li>Hiperplasia ductal atipica
+                    <label for="hda"></label>
+                    <select id="hda">
+                        <option value="Seleccionar">Seleccionar</option>
+                        <option value="Si">Si</option>
+                        <option value="no">No</option>
+                        <option value="Desconocido">Desconocido</option>
+                    </select>
+                </li>
+            </ol>
 
+        </div>
         <p>
             Edad de la primera menstruación
             <label for="menarca"></label>

@@ -4,6 +4,25 @@
  * @return
  */
 alert('esta funcionando')
+/**
+ * Cálculo de riesgo según modelo probabilístico de Gail.
+ * @method Función para evaluar criterio de elegibilidad a realizar el cálculo de riesgo;
+ */
+function antecedenteCa() {
+        alert("No se puede realizar el cálculo.Buscar otra herramienta");
+    }
+
+    /**
+     * Cálculo de riesgo según modelo probabilístico de Gail.
+* @method Función para evaluar criterio de elegibilidad a realizar el cálculo de riesgo;
+*/
+ function antecedenteMut(){
+     alert("Otra herramienta es más apropiada.Elegir IBIS model o BOADICEA");
+    }
+
+
+
+
 function cargarForm (){
     let antecedente, mut, e, raza,biopsia, cuantas, hda, menarca, paridad,
         ahf, urlComp;

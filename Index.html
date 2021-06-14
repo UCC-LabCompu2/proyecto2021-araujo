@@ -33,24 +33,33 @@
         <p>
             Antecedente de Cáncer de mama o carcinoma ductal in situ (CDIS) o
             radioterapia por Linfoma Hodgkin
-            <label for="previo"></label>
-            <select id="previo">
-                <option value="Seleccionar">-Seleccionar-</option>
-                <option value="si" onselect = "alert('No se puede realizar el cálculo.Buscar otra herramienta');">si</option>
+        </p>
+            <p>
+            <label for="s">Si</label>
+                <input id="s" type="radio" name="previa" value="si" onclick="antecedenteCa(this.value)">
+        </p>
                 <!--Error/No se puede realizar el cálculo en pacientes con cáncer previo.Buscar otra herramienta-->
-                <option value="no">no</option>
-            </select>
+            <p>
+                <label for="n">No</label>
+                <input id="n" type="radio" name="previa" value="no">
+
         </p>
         <p>
             Antecedente de mutación BRCA1 o BRCA2 o diagnóstico genético
-            <label for="mutación"></label>
-            <select id="mutación">
-                <option value="Seleccionar">-Seleccionar-</option>
-                <option value="si" onload="alert('Otra herramienta es más apropiada.Elegir IBIS model o BOADICEA')" >si</option>
-                <!--Error/Otra herramienta es más apropiada para el cálculo/IBIS model/BOADICEA model-->
-                <option value="no">no</option>
-                <option value="desconocido">desconocido</option>
-            </select>
+            </p>
+        <p>
+            <label for="mut">Si</label>
+            <input id="mut" type="radio" name="mutación" value="m" onclick="antecedenteMut(this)">
+            <!--Error/Otra herramienta es más apropiada para el cálculo/IBIS model/BOADICEA model-->
+            </p>
+        <p>
+            <label for="nomut">No</label>
+            <input id="nomut" type="radio" name="mutación" value="nomut">
+            </p>
+        <p>
+            <label for="desc">Desconocido</label>
+                <input id="desc" type="radio" name="mutación" value="desconocido">
+
         </p>
         <p>
             <label for="Edad">Edad de la paciente</label>

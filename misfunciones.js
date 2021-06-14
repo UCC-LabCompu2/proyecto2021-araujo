@@ -1,27 +1,33 @@
 /**
  * Cálculo de riesgo según modelo probabilístico de Gail.
- * @method mostrar_ocultar-Muestra opciones si el paciente tiene biopsia previa;
- * @return
- */
-alert('esta funcionando')
-/**
- * Cálculo de riesgo según modelo probabilístico de Gail.
  * @method Función para evaluar criterio de elegibilidad a realizar el cálculo de riesgo;
  */
 function antecedenteCa() {
         alert("No se puede realizar el cálculo.Buscar otra herramienta");
     }
 
-    /**
-     * Cálculo de riesgo según modelo probabilístico de Gail.
-* @method Función para evaluar criterio de elegibilidad a realizar el cálculo de riesgo;
+ /**
+ *Cálculo de riesgo según modelo probabilístico de Gail.
+* @method Función para evaluar criterio de elegibilidad a realizar el cálculo de riesgo.
 */
  function antecedenteMut(){
      alert("Otra herramienta es más apropiada.Elegir IBIS model o BOADICEA");
     }
 
+/**
+ * Càlculo de riesgo segùnel modelo de Gail.
+ * @method Calcular Función para evaluar el calculo de riesgo;
+ */
+function CalcularRR(menarca,biopsiaprevia){
+    let  e, raza,biopsia, cuantas, hda, menarca, paridad,
+        ahf;
+    if (id===menarca){
+        if(menarca==="1"){
+            "1"=1.21;
+        }
+    }
 
-
+}
 
 function cargarForm (){
     let antecedente, mut, e, raza,biopsia, cuantas, hda, menarca, paridad,

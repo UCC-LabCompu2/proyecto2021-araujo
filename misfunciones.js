@@ -18,9 +18,16 @@ function antecedenteCa() {
  * Càlculo de riesgo segùnel modelo de Gail.
  * @method Calcular Función para evaluar el calculo de riesgo;
  */
-function CalcularRR(menarca,biopsiaprevia){
-    let  e, raza,biopsia, cuantas, hda, menarca, paridad,
-        ahf;
+function CalcularRR(){
+    var bi_si, cuan, hiperplasia, me, paridad, ahf;
+    bi_si = document.getElementById("si").value=0;
+    cuan=document.getElementById("cuantas").value;
+    hiperplasia=document.getElementById("hda").value;
+    me=document.getElementById("menarca").value;
+    paridad=document.getElementById("paridad").value;
+    ahf=document.getElementById("ahf").value;
+    if(bi_si||cuan=)
+
     if (id===menarca){
         if(menarca==="1"){
             "1"=1.21;

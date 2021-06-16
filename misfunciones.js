@@ -14,91 +14,132 @@ function antecedenteCa() {
      alert("Otra herramienta es más apropiada.Elegir IBIS model o BOADICEA");
     }
 
+
+        function cargarForm() {
+            let antecedente, mut, e, raza, biopsia, cuantas, hda, menarca, paridad,
+                ahf, urlComp;
+            antecedente = document.getElementById("previo")[0].value;
+            mut = document.getElementById("mutación")[0].value;
+            e = document.getElementById("Edad").value;
+            raza = document.getElementById("raza")[0].value;
+            biopsia = document.getElementById("biopsia")[0].value;
+            cuantas = document.getElementById("cuantas") [0].value;
+            hda = document.getElementById("hda")[0].value;
+            menarca = document.getElementById("menarca") [0].value;
+            paridad = document.getElementById("paridad")[0].value;
+            ahf = document.getElementById("ahf")[0].value;
+            urlComp = "Resultados.html#" + antecedente + "#" + mut + "#" + e + "#" + raza + "#" + biopsia + "#" + cuantas + "#" + hda + "#" + menarca + "#" + paridad + "#" + ahf;
+            window.open(urlComp);
+        }
+
+        function mostrar_resultado() {
+            let urlComp, pre, mu, e, ra, bio, cuan, h, me, pa, ah;
+            urlComp = window.location.href.split("/")[5];
+            pre = urlComp.split("#")[1];
+            mu = urlComp.split("#")[2];
+            e = urlComp.split("#")[3];
+            ra = urlComp.split("#")[4];
+            bio = urlComp.split("#")[5];
+            cuan = urlComp.split("#")[6];
+            h = urlComp.split("#")[7];
+            me = urlComp.split("#")[8];
+            pa = urlComp.split("#")[9];
+            ah = urlComp.split("#")[10];
+            document.getElementById("form").value = pre + "" + mu + "" + e + "" + ra + "" + bio + "" + cuan + "" + h + "" + me + "" + pa + "" + ah;
+        }
+
+        /**
+         * Cálculo de riesgo según modelo probabilístico de Gail.
+         * @method ca-Muestra opciones si el paciente tiene biopsia previa;
+         * @param {string} bio-Si posee biopsia previa despliega dos opciones;
+         * @return
+         */
+
+
+
+        function mostrar_ocultar(bio) {
+            if (bio === "val_mostrar") {
+                document.getElementById("biop").style.display = "block";
+            } else if (bio === "val_ocultar") {
+                document.getElementById("biop").style.display = "none";
+            }
+        }
+
+        /**
+         * Cálculo de riesgo según modelo probabilístico de Gail.
+         * @method canvasGail, muestra el resultado probabilístico en un gráfico;
+         * @return gráfico
+         */
+
+        function canvasGail() {
+            var canvas = document.getElementById("canvasGail");
+            var context = canvas.getContext("2d");
+            var yMax = canvas.height;
+            var xMax = canvas.width;
+            context.fillStyle = "#eee6d0";
+            context.arc(xMax / 2, yMax / 2, 200, 0, 4 * Math.PI);
+            context.stroke();
+            context.fillStyle = "#842A61F2";
+            context.fill();
+        }
+
 /**
- * Càlculo de riesgo segùnel modelo de Gail.
+ * Càlculo de riesgo segùn el modelo de Gail.
  * @method Calcular Función para evaluar el calculo de riesgo;
  */
-function CalcularRR(){
-    var bi_si, cuan, hiperplasia, me, paridad, ahf;
-    bi_si = document.getElementById("si").value=0;
-    cuan=document.getElementById("cuantas").value;
-    hiperplasia=document.getElementById("hda").value;
-    me=document.getElementById("menarca").value;
-    paridad=document.getElementById("paridad").value;
-    ahf=document.getElementById("ahf").value;
-    if(bi_si||cuan=)
 
-    if (id===menarca){
-        if(menarca==="1"){
-            "1"=1.21;
+ function paridad_ahf() {
+        var paridad, me20, pp20_24,pp25_29,ninguno,ppm30;
+        paridad = document.getElementById("paridad").value;
+        if (paridad===me20){
+            document.getElementById("none").value = Number(1);
+        document.getElementById("un").value = Number(2.61);
+        document.getElementById("mas").value = Number(6.8);
+    }else if (paridad===pp20_24) {
+            document.getElementById("none").value = Number(1.24);
+            document.getElementById("un").value = Number(2.68);
+            document.getElementById("mas").value = Number(5.78);
         }
+        else if(paridad===pp25_29||paridad===ninguno){
+            document.getElementById("none").value = Number(1.55);
+            document.getElementById("un").value = Number(2.76);
+            document.getElementById("mas").value = Number(4.91);
+        }else if(paridad===ppm30){
+            document.getElementById("none").value = Number(1.93);
+            document.getElementById("un").value = Number(2.83);
+            document.getElementById("mas").value = Number(4.17);
+
+        }
+
+
     }
 
-}
 
-function cargarForm (){
-    let antecedente, mut, e, raza,biopsia, cuantas, hda, menarca, paridad,
-        ahf, urlComp;
-    antecedente=document.getElementById("previo")[0].value;
-    mut=document.getElementById("mutación")[0].value;
-    e=document.getElementById("Edad").value;
-    raza=document.getElementById("raza")[0].value;
-    biopsia=document.getElementById("biopsia")[0].value;
-    cuantas=document.getElementById("cuantas") [0].value;
-    hda=document.getElementById("hda")[0].value;
-    menarca=document.getElementById("menarca") [0].value;
-    paridad=document.getElementById("paridad")[0].value;
-    ahf=document.getElementById("ahf")[0].value;
-    urlComp = "Resultados.html#" + antecedente + "#" + mut + "#" + e +"#" + raza + "#" + biopsia + "#" + cuantas +"#" + hda +"#"+ menarca + "#" + paridad + "#" + ahf;
-    window.open (urlComp);
-}
+ function biopsia() {
+        var bs, bn, cuan, hiperplasia;
+        bs = document.getElementById("bi_si").value;
+        bn = document.getElementById("bi_no").value;
+        cuan = document.getElementById("cuantas").value;
+        hiperplasia = document.getElementById("hda").value;
+        if (bn) {
+            document.getElementById("bi_no").value = Number(1);
+        } else if (bs || cuan || hiperplasia) {
+            document.getElementById("c1").value = Number(1.7);
+            document.getElementById("c2").value = Number(2.88);
+            document.getElementById("hs").value = Number(0.93);
+            document.getElementById("hn").value = Number(1.82);
+            document.getElementById("des").value = Number(1);
+        }
 
-function mostrar_resultado(){
-    let urlComp, pre, mu, e, ra,bio,cuan,h, me,pa, ah;
-    urlComp = window.location.href.split("/")[5];
-    pre = urlComp.split("#")[1];
-    mu= urlComp.split ("#")[2];
-    e = urlComp.split ("#")[3];
-    ra = urlComp.split("#")[4];
-    bio = urlComp.split ("#")[5];
-    cuan = urlComp.split("#")[6];
-    h = urlComp.split("#")[7];
-    me = urlComp.split("#")[8];
-    pa = urlComp.split("#")[9];
-    ah = urlComp.split("#")[10];
-    document.getElementById("form").value = pre + "" + mu +"" + e +""+ ra +""+ bio +""+ cuan +""+ h +""+ me +""+ pa +""+ ah;
-}
-
-/**
- * Cálculo de riesgo según modelo probabilístico de Gail.
- * @method ca-Muestra opciones si el paciente tiene biopsia previa;
- * @param {string} bio-Si posee biopsia previa despliega dos opciones;
- * @return
- */
-
-
-
-function mostrar_ocultar(bio) {
-    if (bio === "val_mostrar") {
-        document.getElementById("biop").style.display = "block";
-    } else if (bio === "val_ocultar") {
-        document.getElementById("biop").style.display = "none";
-    }
-}
-/**
- * Cálculo de riesgo según modelo probabilístico de Gail.
- * @method canvasGail, muestra el resultado probabilístico en un gráfico;
- * @return gráfico
- */
-
-    function canvasGail () {
-        var canvas = document.getElementById("canvasGail");
-        var context = canvas.getContext("2d");
-        var yMax = canvas.height;
-        var xMax = canvas.width;
-        context.fillStyle = "#eee6d0";
-        context.arc(xMax / 2, yMax / 2, 200, 0, 4* Math.PI);
-        context.stroke();
-        context.fillStyle = "#842A61F2";
-        context.fill();
-    }
+        function CalMe() {
+            var M1, M2, M3, me;
+            me = document.getElementById("menarca").value;
+            if (me === M1) {
+                document.getElementById("m1").value = Number(1.21);
+            } else if (me === M2) {
+                document.getElementById("m2").value = Number(1.10);
+            } else if (me === M3) {
+                document.getElementById("m3").value = Number(1);
+            }
+        }
+ }

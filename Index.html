@@ -34,31 +34,31 @@
             Antecedente de Cáncer de mama o carcinoma ductal in situ (CDIS) o
             radioterapia por Linfoma Hodgkin
         </p>
-            <p>
+        <p>
             <label for="s">Si</label>
-                <input id="s" type="radio" name="previa" value="si" onclick="antecedenteCa(this.value)">
+            <input id="s" type="radio" name="previa" value="si" onclick="antecedenteCa(this.value)">
         </p>
-                <!--Error/No se puede realizar el cálculo en pacientes con cáncer previo.Buscar otra herramienta-->
-            <p>
-                <label for="n">No</label>
-                <input id="n" type="radio" name="previa" value="no">
+        <!--Error/No se puede realizar el cálculo en pacientes con cáncer previo.Buscar otra herramienta-->
+        <p>
+            <label for="n">No</label>
+            <input id="n" type="radio" name="previa" value="no">
 
         </p>
         <p>
             Antecedente de mutación BRCA1 o BRCA2 o diagnóstico genético
-            </p>
+        </p>
         <p>
             <label for="mut">Si</label>
             <input id="mut" type="radio" name="mutación" value="m" onclick="antecedenteMut(this)">
             <!--Error/Otra herramienta es más apropiada para el cálculo/IBIS model/BOADICEA model-->
-            </p>
+        </p>
         <p>
             <label for="nomut">No</label>
             <input id="nomut" type="radio" name="mutación" value="nomut">
-            </p>
+        </p>
         <p>
             <label for="desc">Desconocido</label>
-                <input id="desc" type="radio" name="mutación" value="desconocido">
+            <input id="desc" type="radio" name="mutación" value="desconocido">
 
         </p>
         <p>
@@ -84,12 +84,12 @@
                 Antecedente de biopsia benigna
             </p>
             <p>
-                <label for="Si" >Si</label>
-                <input id="Si" type="radio" name="biopsia" value="val_mostrar" onclick="mostrar_ocultar(this.value)">
+                <label for="bi_si" >Si</label>
+                <input id="bi_si" type="radio" name="biopsia" value="val_mostrar" onclick="mostrar_ocultar(this.value)">
             </p>
             <p>
-                <label for="No">No</label>
-                <input id="No" type="radio" name="biopsia" value="val_ocultar" onclick="mostrar_ocultar(this.value)">
+                <label for="bi_no">No</label>
+                <input id="bi_no" type="radio" name="biopsia" value="val_ocultar" onclick="mostrar_ocultar(this.value)">
             </p>
         </div>
         <!--Si tiene biopsia previa continuará con la lista ordenada/Cuantas/HDA-->
@@ -100,8 +100,8 @@
                     <label for="cuantas"></label>
                     <select id="cuantas">
                         <option value="Seleccionar">-Seleccionar-</option>
-                        <option value="1">1</option>
-                        <option value="2 o más">2 o más</option>
+                        <option id="c1" value="1">1</option>
+                        <option id="c2" value="2 o más">2 o más</option>
                     </select>
                 </li>
 
@@ -109,9 +109,9 @@
                     <label for="hda"></label>
                     <select id="hda">
                         <option value="Seleccionar">Seleccionar</option>
-                        <option value="Si">Si</option>
-                        <option value="no">No</option>
-                        <option value="Desconocido">Desconocido</option>
+                        <option id="hs"  value="Si">Si</option>
+                        <option id="hn"  value="no">No</option>
+                        <option id="des" value="Desconocido">Desconocido</option>
                     </select>
                 </li>
             </ol>
@@ -122,9 +122,9 @@
             <label for="menarca"></label>
             <select id="menarca">
                 <option value="Seleccionar">-Seleccionar-</option>
-                <option id="1" value="<12" onchange="CalcularRR()"><12</option>
-                <option id="2" value="12 a 13" onchange="CalcularRR()">12 a 13</option>
-                <option id="3" value=">=14" onchange="CalcularRR()"> >=14</option>
+                <option id="m1" value="<12"><12</option>
+                <option id="m2" value="12 a 13">12 a 13</option>
+                <option id="m3" value=">=14"> >=14</option>
             </select>
         </p>
         <p>
@@ -132,11 +132,11 @@
             <label for="paridad"></label>
             <select id="paridad">
                 <option value="Seleccionar">Seleccionar</option>
-                <option value="Nulípara">Nulípara</option>
-                <option value="Menor a 20 años">Menor a 20 años</option>
-                <option value="20-24">20-24</option>
-                <option value="25-29">25-29</option>
-                <option value="Mayor a 30 años">Mayor a 30 años</option>
+                <option id="nu"  value="Nulípara">Nulípara</option>
+                <option id="menor20" value="Menor a 20 años">Menor a 20 años</option>
+                <option id="20_24"  value="20-24">20-24</option>
+                <option id="25-29"  value="25-29">25-29</option>
+                <option id="mayor30" value="Mayor a 30 años">Mayor a 30 años</option>
             </select>
 
         </p>
@@ -145,10 +145,10 @@
             <label for="ahf"></label>
             <select id="ahf">
                 <option name="Seleccionar">Seleccionar</option>
-                <option name="Ninguno">Ninguno</option>
-                <option name="Uno">Uno</option>
-                <option name="Más de uno">Más de uno</option>
-                <option name="Desconocido">Desconocido</option>
+                <option id="none" name="Ninguno">Ninguno</option>
+                <option id="un" name="Uno">Uno</option>
+                <option id="mas" name="Más de uno">Más de uno</option>
+                <option id="d"   name="Desconocido">Desconocido</option>
             </select>
         </p>
 

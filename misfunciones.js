@@ -16,36 +16,32 @@ function antecedenteCa() {
 
 
         function cargarForm() {
-            let antecedente, mut, e, raza, biopsia, cuantas, hda, menarca, paridad,
+            var ed, raza, biopsia, cuantas, hda, menarca, paridad,
                 ahf, urlComp;
-            antecedente = document.getElementById("previo")[0].value;
-            mut = document.getElementById("mutación")[0].value;
-            e = document.getElementById("Edad").value;
+            ed= document.getElementById("Edad").value;
             raza = document.getElementById("raza")[0].value;
-            biopsia = document.getElementById("biopsia")[0].value;
+            biopsia = document.getElementsByName("biopsia")[0].value;
             cuantas = document.getElementById("cuantas") [0].value;
             hda = document.getElementById("hda")[0].value;
             menarca = document.getElementById("menarca") [0].value;
             paridad = document.getElementById("paridad")[0].value;
             ahf = document.getElementById("ahf")[0].value;
-            urlComp = "Resultados.html#" + antecedente + "#" + mut + "#" + e + "#" + raza + "#" + biopsia + "#" + cuantas + "#" + hda + "#" + menarca + "#" + paridad + "#" + ahf;
+            urlComp = "Resultados.html#" +  ed + "#" + raza + "#" + biopsia + "#" + cuantas + "#" + hda + "#" + menarca + "#" + paridad + "#" + ahf;
             window.open(urlComp);
         }
 
         function mostrar_resultado() {
-            let urlComp, pre, mu, e, ra, bio, cuan, h, me, pa, ah;
+            var urlComp,eda, ra, bio, cuan, h, me, pa, ah;
             urlComp = window.location.href.split("/")[5];
-            pre = urlComp.split("#")[1];
-            mu = urlComp.split("#")[2];
-            e = urlComp.split("#")[3];
-            ra = urlComp.split("#")[4];
-            bio = urlComp.split("#")[5];
-            cuan = urlComp.split("#")[6];
-            h = urlComp.split("#")[7];
-            me = urlComp.split("#")[8];
-            pa = urlComp.split("#")[9];
-            ah = urlComp.split("#")[10];
-            document.getElementById("form").value = pre + "" + mu + "" + e + "" + ra + "" + bio + "" + cuan + "" + h + "" + me + "" + pa + "" + ah;
+            eda = urlComp.split("#")[1];
+            ra = urlComp.split("#")[2];
+            bio = urlComp.split("#")[3];
+            cuan = urlComp.split("#")[4];
+            h = urlComp.split("#")[5];
+            me = urlComp.split("#")[6];
+            pa = urlComp.split("#")[7];
+            ah = urlComp.split("#")[8];
+            document.getElementById("form").value = eda + "" + ra + "" + bio + "" + cuan + "" + h + "" + me + "" + pa + "" + ah;
         }
 
         /**
